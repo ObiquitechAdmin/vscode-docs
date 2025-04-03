@@ -60,3 +60,8 @@ You can sign out by going to the **Accounts** button in the Activity bar. Once t
 If you are not able to retrieve a license after a successful sign in operation, you'll likely need to modify your firewall settings by adding the URL below to its allowlist:
 
 `https://api.subscriptions.visualstudio.microsoft.com/Me/Entitlements/IDEBenefits`
+
+### Sign in stuck in a loop
+
+If you are unable to obtain a successful sign in operation after the sign in prompt, you will likely need to change your authentication method to open the sign in prompt in your default browser and complete it there.
+You can do this by pressing `Ctrl+,` on Windows, or `Cmd+,` on Mac, and searching for `microsoft-authentication.implementation`, then changing it to `classic`.
